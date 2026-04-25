@@ -18,12 +18,12 @@ def run_web():
     app_web.run(host='0.0.0.0', port=port)
 
 # --- 2. TU LÓGICA DE FUENTES (La que te gustó) ---
-letras_normales = "abcdefghijklmnopqrstuvwxyz"
-letras_font =     ['ⓐ', 'ⓑ', 'ⓒ', 'ⓓ', 'ⓔ', 'ⓕ', 'ⓖ', 'ⓗ', 'ⓘ', 'ⓙ', 'ⓚ', 'ⓛ', 'ⓜ', 'ⓝ', 'ⓞ', 'ⓟ', 'ⓠ', 'ⓡ', 'ⓢ', 'ⓣ', 'ⓤ', 'ⓥ', 'ⓦ', 'ⓧ', 'ⓨ', 'ⓩ']
+letras_normales = "abcdefghijklmnñopqrstuvwxtzABCDEFGHIJKLMNÑOPQRSTUVWXYZ0123456789"
+letras_font =     ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h','i', 'j','k', 'l', 'm', 'n', 'ñ', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 't', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'Ñ', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 
 def transformar_texto(texto):
     resultado = ""
-    for caracter in texto.lower():
+    for caracter in texto():
         if caracter in letras_normales:
             posicion = letras_normales.index(caracter)
             resultado += letras_font[posicion]
