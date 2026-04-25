@@ -20,7 +20,7 @@ def run_web():
 # --- 2. LÓGICA DE TRANSFORMACIÓN ---
 # Eliminada la 'ñ' y sincronizadas las longitudes (62 caracteres cada una)
 letras_normales = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-letras_font     = "ᥲbᥴdᥱfghιjkᥣmᥒoρqrstᥙvᥕxtzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+letras_font     = "ɑbcdefghijklmnopqrstuvwxtzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
 def transformar_texto(texto):
     resultado = ""
